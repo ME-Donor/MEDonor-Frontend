@@ -10,10 +10,18 @@ export const LoginInit = (loginCred) => {
       .post(requestURL, loginCred)
       .then((res) => {
         localStorage.setItem('token', res.data.token);
+        localStorage.setItem('username', res.data.user.username);
+        localStorage.setItem('name', res.data.user.name);
+        localStorage.setItem('contact', res.data.user.contact);
+        localStorage.setItem('role', res.data.user.role);
+        localStorage.setItem('address', res.data.user.address);
+        localStorage.setItem('description', res.data.user.description);
+        localStorage.setItem('_id', res.data.user._id);
+
         dispatch({
           type: actionTypes.LOGIN_SUCCESS,
-          token: res.data.token,
           payload: res.data.user,
+          token: res.data.token,
         });
       })
       .catch((err) => {
@@ -40,15 +48,18 @@ export const signupInit = (signupCred) => {
 
 export const logout = () => {
   return (dispatch) => {
-    const requestURL = '/';
+    const requestURL = '/users/logout';
     axios
       .get(requestURL)
       .then((res) => {
         console.log(res);
-        localStorage.removeItem('Username');
-        localStorage.removeItem('email');
-        localStorage.removeItem('role');
+        localStorage.removeItem('name');
+        localStorage.removeItem('username');
         localStorage.removeItem('token');
+        localStorage.removeItem('role');
+        localStorage.removeItem('contact');
+        localStorage.removeItem('address');
+        localStorage.removeItem('description');
         dispatch({
           type: actionTypes.LOGOUT_SUCCESS,
         });

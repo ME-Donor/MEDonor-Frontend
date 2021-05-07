@@ -1,4 +1,4 @@
-//----------------BLOGS---------------------------------//
+//----------------BENEFICIARY---------------------------------//
 import * as ActionTypes from "../ActionTypes";
 import { baseUrl } from "../../shared/baseUrl";
 
@@ -12,7 +12,7 @@ export const postNgoBeneficiary = (ngobeneficiary) => (dispatch) => {
 	const newNgoBeneficiary = ngobeneficiary;
 	newNgoBeneficiary.dateNum = Date.now();
 	const bearer = "Bearer " + localStorage.getItem("token");
-
+   
 	return fetch(baseUrl + "ngobeneficiary", {
 		method: "POST",
 		body: JSON.stringify(newNgoBeneficiary),

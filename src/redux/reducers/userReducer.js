@@ -1,10 +1,14 @@
 import * as actionTypes from '../ActionTypes';
 
 const initialState = {
-  Username: null || localStorage.getItem('Username'),
-  email: null || localStorage.getItem('email'),
+  username: null || localStorage.getItem('username'),
   role: null || localStorage.getItem('role'),
   token: null || localStorage.getItem('token'),
+  contact: null || localStorage.getItem('contact'),
+  address: null || localStorage.getItem('address'),
+  description: null || localStorage.getItem('description'),
+  name: null || localStorage.getItem('name'),
+  _id: null || localStorage.getItem('_id'),
 };
 
 const UserReducer = (state = initialState, action) => {
@@ -12,17 +16,19 @@ const UserReducer = (state = initialState, action) => {
     case actionTypes.LOGOUT_SUCCESS:
       return {
         ...state,
-        Username: null,
-        email: null,
+        username: null,
         role: null,
         token: null,
+        contact: null,
+        address: null,
+        name: null,
+        description: null,
       };
+
     case actionTypes.LOGIN_SUCCESS:
       return {
         ...state,
-        Username: action.payload.username,
-        // email: action.payload.email,
-        role: action.payload.role,
+        ...action.payload,
         token: action.token,
       };
     default:
@@ -31,3 +37,4 @@ const UserReducer = (state = initialState, action) => {
 };
 
 export default UserReducer;
+

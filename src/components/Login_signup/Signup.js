@@ -5,6 +5,7 @@ import './Signup.css';
 import {connect} from "react-redux";
 import * as userActions from "../../redux/actions/userActions";
 import display5 from "../../images/LOGo.jpg"
+import {Redirect} from "react-router-dom";
 
 const Signup = (props) => {
 
@@ -25,6 +26,16 @@ const Signup = (props) => {
         [event.target.name] : event.target.value
       }
     })
+  }
+
+  const [rdirect, setRDirect] = useState(false);
+
+  async function asyncSignup(){
+    await props.signupInit(signupCred);
+  }
+
+  if(rdirect){
+    return <Redirect to="/Login"/>
   }
 
   return (
@@ -87,7 +98,9 @@ const Signup = (props) => {
 
             <Button className='buto' onClick={()=>{
               console.log(signupCred)
-              props.signupInit(signupCred)
+              asyncSignup().then(()=>{
+                setRDirect(true)}
+              )
             }}>Sign Up</Button>
           </Col>
         </Row>

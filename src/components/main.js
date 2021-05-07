@@ -24,7 +24,7 @@ import WTH from './waystohelp/wth';
 
 import './main.css';
 import { ADD_MEDICINE } from '../redux/ActionTypes';
-import addBeneficiary from './forms/addngobeneficiay';
+import addBeneficiary from './forms/addngobeneficiary';
 
 const Main = (props) => {
   let routes = null;

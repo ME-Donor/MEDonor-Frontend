@@ -66,7 +66,7 @@ const Login = (props) => {
     
     </div>
     </Row>
-    <Row><div className="Otheroption"><center><Button className='butto'>New User? Signup</Button></center></div></Row>
+    <Row><div className="Otheroption"><center><Button className='butto' href='/Signup'>New User? Signup</Button></center></div></Row>
     
     </Col>
     </Row>

@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import './DonorSpeaks.css';
 import { connect } from 'react-redux';
-import { fetchDonorSpeaks } from '../../redux/actions/donorspeaks';
+import { fetchDonorSpeaks, } from '../../redux/actions/donorspeaks';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Jumbotron , Container , Row , Col , Button} from 'react-bootstrap'
 
 const mapStateToProps = (state) => {
   return {
     donorSpeaks: state.donorspeaks,
+    role:state.user.role,
+    token:state.user.token,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     fetchDonorSpeaks: () => dispatch(fetchDonorSpeaks()),
+    
   };
 };
 
@@ -24,11 +27,14 @@ class DonorSpeaks extends Component {
 
   renderDonorSpeaks = (donorSpeaks, key) => {
     return (
+      <div>
       <div className='column'style={{padding: "20px"}} key={key}>
         <div className='card-ds'>
           <p>{donorSpeaks.description}</p>
-          <p className='donorName'>{donorSpeaks.author.username}</p>
+          <p className='donorName'>{donorSpeaks.author.name}</p>
+         
         </div>
+      </div>
       </div>
     );
   };
@@ -48,7 +54,7 @@ class DonorSpeaks extends Component {
           </Container>
         </Jumbotron>
         <hr className='sep-2' style={{width:"85%" , marginTop:"-30px"}} />
-        <div className='row'>
+        <div>
           {this.props.donorSpeaks.donorSpeaks.map((item, key) =>
             this.renderDonorSpeaks(item, key)
           )}

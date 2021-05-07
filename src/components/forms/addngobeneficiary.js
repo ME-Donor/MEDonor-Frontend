@@ -6,7 +6,7 @@ import './forms.css';
 import Form from 'react-bootstrap/Form';
 import Select from 'react-select';
 import blogFormBG from '../../images/blogform.jpg';
-import { postNgoBlog } from '../../redux/actions/ngoblogs';
+import { postNgoBeneficiary } from '../../redux/actions/ngobeneficiary';
 import { connect } from 'react-redux';
 
 const mapStateToProps = (state) => {
@@ -18,20 +18,22 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    postNgoBlog: (ngoblog, name, token) =>
-      dispatch(postNgoBlog(ngoblog, name, token)),
+    postNgoBeneficiary: (ngobeneficiary, name, token) =>
+      dispatch(postNgoBeneficiary(ngobeneficiary, name, token)),
   };
 };
 
-class addBlogs extends Component {
+class addBeneficiary extends Component {
   constructor(props) {
     super(props);
     this.state = {
       heading: '',
       description: '',
+      name: ' ',
       errors: {
         heading: '',
         description: '',
+        name: '',
       },
     };
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -50,22 +52,28 @@ class addBlogs extends Component {
     const isValid = this.formValidation();
     console.log(this.state);
     if (isValid) {
-      const newBlog = {
+      const newBeneficiary = {
         heading: this.state.heading,
         description: this.state.description,
+        name: this.state.name,
         author: this.props.name,
       };
-      this.props.postNgoBlog(newBlog);
+      this.props.postNgoBeneficiary(newBeneficiary);
     }
   }
 
   formValidation = () => {
-    const { heading, description } = this.state;
+    const { heading, description,name } = this.state;
     let headingError = ' ',
       descriptionError = ' ',
+      nameError = '',
       error;
     if (!heading.trim()) {
       headingError = 'Heading is required';
+      error = true;
+    }
+    if (!name.trim()) {
+      nameError = 'Name is required';
       error = true;
     }
     if (!description.trim()) {
@@ -99,7 +107,7 @@ class addBlogs extends Component {
                   <BreadcrumbItem>
                     <Link to='/home'>Home</Link>
                   </BreadcrumbItem>
-                  <BreadcrumbItem active>Add Blog</BreadcrumbItem>
+                  <BreadcrumbItem active>Add Beneficiary</BreadcrumbItem>
                 </Breadcrumb>
               </Row>
               <div className='blogform_div'>
@@ -115,6 +123,22 @@ class addBlogs extends Component {
                         type='text'
                         value={this.state.heading}
                         placeholder='Give a descriptive Heading.'
+                        onChange={this.handleInputChange}
+                      />
+                      <div className='invalid__feedback'>
+                        {this.state.errors.heading}
+                      </div>
+                    </Form.Group>
+                    <Form.Group controlId='formBasicEmail'>
+                      <Form.Label>
+                        <span className='form__icon'></span>Beneficiary Name
+                      </Form.Label>
+                      <input
+                        name='name'
+                        className='form-control'
+                        type='text'
+                        value={this.state.name}
+                        placeholder='Write the beneficiary name.'
                         onChange={this.handleInputChange}
                       />
                       <div className='invalid__feedback'>
@@ -154,4 +178,4 @@ class addBlogs extends Component {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(addBlogs);
+export default connect(mapStateToProps, mapDispatchToProps)(addBeneficiary);

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .main-navbar-hf{
     background-color: #085053;
     padding-bottom: -10px;
@@ -7,6 +9,7 @@
 .nav-links-section-hf{
     margin-left: 100px;
     margin-right: 100px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-brand-name-hf{
@@ -16,6 +19,7 @@
 
 .navbar-brand-name-hf span{
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navbar-nav-links-hf{
@@ -78,6 +82,7 @@
     border-color: #fff;
     color: #fff;
     font-size:20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width: 600px){

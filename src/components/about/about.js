@@ -5,7 +5,7 @@ import gr from '../../images/gr.png';
 import ad from '../../images/ad.png';
 import jatin from '../../images/jatin.png';
 import ni from '../../images/ni.png';
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Jumbotron , Container } from "react-bootstrap";
 
 
 
@@ -17,13 +17,13 @@ class about extends Component {
     return (
       <div>
         <div className=" text-center">
+          <Jumbotron fluid  className="jumbo-home" style={{backgroundColor: '#085053' , marginTop:"-25px"}}>
+            <h1 className="medonor-heading" style={{color: "#fff"}}> We save medicines to save lives.<br/>You can help.</h1>
+
+            <p className="main-title-home" style={{color:"#0D9EA4" , fontSize:"40px"}}>Not everyone has medication to donate.</p>
+            <p className="sub-sub-para">But your monetary support helps us get surplus medication to people in need.</p>
+          </Jumbotron>
           <div className="about">
-            <h1>We save medicines to save lives.</h1>
-            <h1>You can help.</h1>
-
-            <p>Not everyone has medication to donate.</p>
-            <p >But your monetary support helps us get surplus medication to people in need.</p>
-
             <img className="image1" src={Capture3} alt="" />
             <br></br>
             <br></br>
@@ -36,10 +36,10 @@ class about extends Component {
           <div className="container">
             <Row>
               <Col md={6} className="vis-mis">
-                <h2>
+                <h2 className="content-h3-about">
                   Vision
-                        </h2>
-                <p>
+                </h2>
+                <p className="para">
                   A happy, healthy and creative child whose rights are protected and honoured in a society that is built on respect for dignity, justice and equity for all.
                   To enable peoples’ collectives and movements encompassing diverse segments, to pledge their particular strengths, working in partnership to secure, protect and honour the rights of India’s children.
                         </p>
@@ -47,10 +47,10 @@ class about extends Component {
 
 
               <Col md={6} className="vis-mis">
-                <h2>
+                <h2 className="content-h3-about">
                   Mission
                 </h2>
-                <p >
+                <p className="para">
                   To enable people to take responsibility for the situation of the deprived Indian child and so motivate them to seek resolution through individual and collective action thereby enabling children to realise their full potential
                   To make people discover their potential for action and change
                         </p>
@@ -60,7 +60,7 @@ class about extends Component {
           <br></br>
 
         </div>
-
+      <Container fluid>
         <div className="faqq">
           <br></br>
           <br></br>
@@ -164,6 +164,7 @@ class about extends Component {
         </div>
 
         <span className="brmedium"></span>
+        </Container>
       </div >
 
 

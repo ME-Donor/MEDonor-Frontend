@@ -115,7 +115,7 @@ const WTH = () => {
                 </div>
               </div>
               <div class="timeline-content">
-                <h5 class="title">DONOATE YOUR UNUSED MEDICINES</h5>
+                <h5 class="title">DONATE YOUR UNUSED MEDICINES</h5>
                 <p class="description">
                   You can saves time and money and helps those in need. Just 
                   let the NGO know when a donation is ready and they will 
@@ -136,7 +136,7 @@ const WTH = () => {
               <div class="timeline-content">
                 <h5 class="title">EVERYONE BENEFITS</h5>
                 <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
+                  NGOs will send you a note detailing how much the medication was worth, and how many people it helped.
                 </p>
               </div>
             </div>
@@ -153,7 +153,9 @@ const WTH = () => {
               <div class="timeline-content">
                 <h5 class="title">SHARE YOUR EXPERIENCE</h5>
                 <p class="description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
+                  NGOs can briefly expresses how our organization’s work has benefited the community. <b>(Beneficiary Talks)</b>
+                  Donors can express how their donation positively impacted many lives. <b>(Donor Speaks)</b>
+                  This will inspire people to work for the same cause.
                 </p>
               </div>
             </div>
@@ -161,14 +163,6 @@ const WTH = () => {
         </div>
         
       </Container>
-
-      <Jumbotron style={{backgroundColor:"#fff"}}>
-        <Container style={{textAlign:"center"}}>
-          <Button variant="outline-info" size="lg" style={{border:"1px solid #0b7872"}}>
-            Sign in
-          </Button>{' '}
-        </Container>
-      </Jumbotron>
       
       <Testimonials data={landingPageData.Testimonials} />
 

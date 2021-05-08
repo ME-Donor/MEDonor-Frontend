@@ -1,22 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 .about h1{
     vertical-align: 'inherit'; 
     color: #0D9EA4;
     font-size: 60px;
-    font-family: Philosopher;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about p {
     vertical-align: 'inherit';
     color:  #6D6766;
-     font-size: 1.7rem;
+    font-size: 1.7rem;
     padding-top: 8px;
 
 }
 .about h2{
-    vertical-align: inherit; 
-    color: #0D9EA4;
+     vertical-align: inherit; 
+     color: #0D9EA4;
      font-size: 46px;
-     font-family: Philosopher;
+     font-family: 'Montserrat', sans-serif;
      padding-top: 10px;
 }
 
@@ -30,13 +33,17 @@ hr {
     height:25%;
 }
 
+.content-h3-about{
+    color: #0D9EA4; 
+    font-size: 6.5rem;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
 .vis-mis h2 {
     font-size: 40px;
-    font-family: Philosopher;
 }
 .vis-mis p {
     font-size: 18px;
-    font-family: Philosopher;
 }
 
 .picture {
@@ -62,7 +69,7 @@ hr {
 .ccontainer body {
       background-color: #FFF8F2;
       color: #373539;
-      font-family: Philosopher;
+      font-family: 'Julius Sans One', sans-serif;
     }
     
 .ccontainer {
@@ -82,7 +89,7 @@ hr {
       max-height: 0px;
       overflow: hidden;
       transition: 0.27s ease;
-      font-family: Philosopher;
+      font-family: 'Julius Sans One', sans-serif;
     }
     
 .faq-drawer__title {
@@ -95,7 +102,7 @@ hr {
       position: relative;
       margin-bottom: 0;
       transition: all 0.25s ease-out;
-      font-family: Philosopher;
+      font-family: 'Julius Sans One', sans-serif;
     }
     
 .faq-drawer__title::after {
@@ -117,7 +124,7 @@ hr {
     
     /* OPTIONAL HOVER STATE */
 .faq-drawer__title:hover { 
-      color: #4E4B52  ;
+      color: #115550  ;
     }
     
 .faq-drawer__trigger:checked
@@ -144,6 +151,7 @@ input[type="checkbox"] {
 .conttainer {
       padding-left: 45px;
       padding-right: 7px;
+      font-family: 'Montserrat', sans-serif;
     }
       
     

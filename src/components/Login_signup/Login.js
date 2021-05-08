@@ -24,49 +24,55 @@ const Login = (props) => {
 
   return (
     <div className="LoginContainer">
-    <Row>
-    <Col lg="6"><LoginCorousel/></Col>
-    <Col lg="6">
-    <Row>
-    <div className="LoginDiv">
-    <Form>
-    <FormGroup>
-      <Label for='exampleEmail'>Username</Label>
-      <Input
-        type='text'
-        name='username'
-        id='exampleEmail'
-        placeholder='Enter Username'
-        value={loginCred.username}
-        onChange={changeHandler}
-      />
-    </FormGroup>
+      <Row>
+        <Col lg="6"><LoginCorousel/></Col>
+        <Col lg="6">
+          <Row>
+            <div className="LoginDiv">
+              <Form>
+                <FormGroup>
+                  <Label for='exampleEmail'>Username</Label>
+                  <Input
+                    type='text'
+                    name='username'
+                    id='exampleEmail'
+                    placeholder='Enter Username'
+                    value={loginCred.username}
+                    onChange={changeHandler}
+                  />
+                </FormGroup>
 
-    <FormGroup>
-      <Label for='examplePassword'>Password</Label>
-      <Input
-        type='password'
-        name='password'
-        id='examplePassword'
-        placeholder='Enter Password'
-        value={loginCred.password}
-        onChange={changeHandler}
-      />
-    </FormGroup>
-    </Form>
-    <Button
-      className='butto'
-      onClick={() => {
-        props.loginInit(loginCred);
-        console.log(loginCred);
-      }}
-    >
-      LogIn
-    </Button>
-    
-    </div>
-    </Row>
-    <Row><div className="Otheroption"><center><Button className='butto' href='/Signup'>New User? Signup</Button></center></div></Row>
+                <FormGroup>
+                  <Label for='examplePassword'>Password</Label>
+                  <Input
+                    type='password'
+                    name='password'
+                    id='examplePassword'
+                    placeholder='Enter Password'
+                    value={loginCred.password}
+                    onChange={changeHandler}
+                  />
+                </FormGroup>
+              </Form>
+              <Button
+                className='butto'
+                onClick={() => {
+                  props.loginInit(loginCred);
+                  console.log(loginCred);
+                }}
+              >
+                LogIn
+              </Button>
+            
+            </div>
+          </Row>
+          <Row>'
+            <div className="Otheroption">
+              <center>
+                <Button className='butto' href='/Signup'>New User? Signup</Button>
+              </center>
+            </div>
+          </Row>
     
     </Col>
     </Row>

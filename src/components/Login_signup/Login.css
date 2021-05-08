@@ -17,43 +17,46 @@
 
 .butto{
   margin:6px 2px;
+  background-color: #175e59;
+}
+
+.butto:hover{
+  background-color: #217a74;
+  color: #b1c5c4;
 }
 
 .LoginDiv{
   box-shadow: 0 0 2px #495867;
   padding: 5%;
-  width: 100%;
+  width: 90%;
   background-color: #F7F7FF;
   opacity: 0.90;
-  color: #265279;
+  color: #175e59;
   margin-top: 5%; 
-  border-radius: 10px;
   
-  background-image: url('../../images/Caraousel/Caraousel-Image-last.jpg');
+  background-image: url('../../images/Caraousel/loginbg2.jpg');
 }
 
 .Otheroption{
   box-shadow: 0 0 2px #495867;
   padding: 5%;
-  width: 100%;
-  margin-top: 5%;
+  width: 90%;
+  margin-top: 3%;
   background-color: #F7F7FF;
-  color: #265279;
+  color: #175e59;
   opacity: 0.90;
-  border-radius: 10px;
   
-  background-image: url('../../images/Caraousel/Caraousel-Image-last.jpg');
+  background-image: url('../../images/Caraousel/loginbg2.jpg');
 }
 
 .LoginCorousel{
-  height: 400px;
+  height: 436px;
   background-size:cover;
   overflow:hidden;
   box-shadow: 0 0 25px white;
-  border-radius: 50px;
 }
 
 .LoginCorouselDiv{
-  width: 90%;
-  margin: 5% 10% 5% 10%;
+  width: 85%;
+  margin: 6% 10% 5% 10%;
 }

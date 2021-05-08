@@ -4,7 +4,10 @@
     
 }
 
-
+.nav-links-section-hf{
+    margin-left: 100px;
+    margin-right: 100px;
+}
 
 .navbar-brand-name-hf{
     font-size: 25px;
@@ -27,7 +30,7 @@
 /*---------------------------------------*/
 .navbar-main-links-hf {
     margin-bottom: 0px;
-    
+    margin-left: 80px;
    
 }
 
@@ -75,4 +78,11 @@
     border-color: #fff;
     color: #fff;
     font-size:20px;
+}
+
+@media (min-width: 600px){
+    .nav-links-section-hf{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

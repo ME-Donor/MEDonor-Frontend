@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import "./about.css";
 import Capture3 from '../../images/Capture3.PNG';
 import gr from '../../images/gr.png';
+import ad from '../../images/ad.png';
+import jatin from '../../images/jatin.png';
+import ni from '../../images/ni.png';
 import { Row, Col } from "react-bootstrap";
 
 
@@ -125,11 +128,11 @@ class about extends Component {
         <div className="conttainer">
           <Row>
             <Col md={3}>
-              <img src="https://i.imgur.com/eIDbGM4.png" alt="..." className="img-circle pict" />
+              <img src={ni} alt="..." className="img-circle pict" />
               <br></br>
               <br></br>
               <h4 className="n1"><b>Nisha</b></h4>
-              <h4 className="r1">Frontend</h4>
+              <h4 className="r1">Backend</h4>
             </Col>
             <Col md={3}>
 
@@ -143,7 +146,7 @@ class about extends Component {
             </Col>
             <Col md={3}>
 
-              <img src="https://i.imgur.com/2Apf2Za.png" alt="..." className="img-circle pict" />
+              <img src={ad} alt="..." className="img-circle pict" />
               <br></br>
               <br></br>
               <h4 className="n3"><b>Aditi Panigrahi</b></h4>
@@ -151,7 +154,7 @@ class about extends Component {
             </Col>
             <Col md={3}>
 
-              <img src="https://i.imgur.com/A1fEItC.png" alt="..." className="img-circle pict" />
+              <img src={jatin} alt="..." className="img-circle pict" />
               <br></br>
               <br></br>
               <h4 className="n4"><b>Jatin Gupta</b></h4>

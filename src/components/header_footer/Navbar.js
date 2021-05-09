@@ -40,9 +40,6 @@ function Header(props) {
                             </Nav.Link>
 
                             { props.role && <> 
-                                <Nav.Link eventKey={4} href="/blog" className="navbar-main-links-hf " >
-                                    <span className="navbar-nav-links-hf ">Blog</span>
-                                </Nav.Link>
 
                                 <Nav.Link eventKey={4} href="/donorspeaks" className="navbar-main-links-hf " >
                                 <span className="navbar-nav-links-hf ">Donorspeaks</span>

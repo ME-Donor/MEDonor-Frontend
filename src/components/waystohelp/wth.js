@@ -39,7 +39,7 @@ const WTH = () => {
         </Container>
       </Jumbotron>
 
-      <Container className="timeline-complete">
+      <Container fluid className="timeline-complete">
         <div class="container">
           <div class="main-timeline">
             

@@ -12,41 +12,51 @@ export const Testimonials = (props) => {
           <div className="ccontainer">
           
               <div className="faq-drawer">
-                <input className="faq-drawer__trigger" id="faq-drawer" type="checkbox" /><label className="faq-drawer__title" htmlFor="faq-drawer">Is this program free? </label>
+                <input className="faq-drawer__trigger" id="faq-drawer" type="checkbox" /><label className="faq-drawer__title" htmlFor="faq-drawer">Who can donate? </label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p>
-                    Upon joining, donors can choose whether to donate based on a list of approved medications, which is free, or donate all of their unexpired, unopened, non-controlled medication, which costs a nominal fee.
+                    <p className="fqqans">
+                    Individuals or organizations with unused or unwanted medicines can donate.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="faq-drawer">
-                <input className="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label className="faq-drawer__title" htmlFor="faq-drawer-2">Why should I donate medicine?</label>
+                <input className="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label className="faq-drawer__title" htmlFor="faq-drawer-2">Can I donate expired medications?</label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    <p className="fqqans">
+                    We do not accept expired or opened medications.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="faq-drawer">
-                <input className="faq-drawer__trigger" id="faq-drawer-2" type="checkbox" /><label className="faq-drawer__title" htmlFor="faq-drawer-2">How are matches made?</label>
+                <input className="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label className="faq-drawer__title" htmlFor="faq-drawer-3">Do you accept all medications?</label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    <p className="fqqans">
+                    We do not accept expired or opened medications.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="faq-drawer">
-                <input className="faq-drawer__trigger" id="faq-drawer-3" type="checkbox" /><label className="faq-drawer__title" htmlFor="faq-drawer-3">Is this legal?</label>
+                <input className="faq-drawer__trigger" id="faq-drawer-4" type="checkbox" /><label className="faq-drawer__title" htmlFor="faq-drawer-4">What does unopened/sealed mean?</label>
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
-                    <p>
-                    Yes. Donation is a new option. SIRUM works under each state’s recently-passed Good Samaritan Laws for Drug Donation. We are among the world’s leading experts on drug donation laws and regulations.
+                    <p className="fqqans">
+                    Donated medicine must have a tamper-evident seal around the medication. Bubble packs, blister packs, and bingo cards even if they only have a few pills left are okay. Outer packaging can be opened if there is an inner seal, such as a foil around inhalation solutions, even though the box was opened.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="faq-drawer">
+                <input className="faq-drawer__trigger" id="faq-drawer-5" type="checkbox" /><label className="faq-drawer__title" htmlFor="faq-drawer-5">How does shipping work?</label>
+                <div className="faq-drawer__content-wrapper">
+                  <div className="faq-drawer__content">
+                    <p className="fqqans">
+                    NGO's contact the donors who've put up medicines ofr donation, they then pick up the medicines from the donor's place or the donor can drop them at the NGO, whichever suits both.
                     </p>
                   </div>
                 </div>

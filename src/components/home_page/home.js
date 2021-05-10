@@ -62,8 +62,7 @@ function home() {
                             MEDONOR saves medicine to save lives
                         </h3>
                         <p className="para" style={{fontSize:"2.2rem"}}>
-                            We’re national drug donation law experts who enable health 
-                            facilities and pharmacies to donate their unused medicine. 
+                            We’re dedicated to saving lives, bringing a change and help people who cannot afford medications. 
                             Our system is built to ensure compliance and provide full 
                             liability protection.
                         </p>
@@ -76,11 +75,8 @@ function home() {
                     <Col>
                         <h3 className="content-h3-home">Who can donate?</h3>
                         <p className="para" style={{fontSize:"2.2rem"}}>
-                            MEDONOR directly accepts medicine from manufacturers, 
-                            pharmacies, wholesalers, and health facilities. If you’re 
-                            an individual with unused medicine to donate, you can donate 
-                            through one of our partners. You can also contribute to our 
-                            cause with a monetary donation. Every little bit helps, and 
+                            MEDONOR directly accepts medicine from individuals, manufacturers, 
+                            pharmacies, wholesalers, and health facilities. Every little bit helps, and 
                             we appreciate your support.
                             <br/><br/>
                             Know more about the generous donors and NGOs who have been works for this greater cause

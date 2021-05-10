@@ -6,7 +6,7 @@
 
     },
     "About": {
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "paragraph": "Donating to the causes you care about not only benefits the charities themselves, it can be deeply rewarding for you too. In India, various studies have shown the rising out-of-pocket expenditures on healthcare is pushing around 32-39 million Indians below the poverty line annually. Too many Indian citizens do not get access to medicines owing to high costs. By donating unwanted or unused medicines instead of throwing them away, you can save someone's life.",
         "Why": [
             "Lorem ipsum dolor",
             "Tempor incididunt",
@@ -67,7 +67,7 @@
         {
             "icon": "fa fa-bullhorn",
             "title": "Save Money",
-            "text": "Medication destruction is time consuming and costly for your organization. SIRUM allows you to donate your unused medication for free."
+            "text": "Medication destruction is time consuming and costly for any organization. MEDONOR allows you to donate your unused medication for free."
         },
         {
             "icon": "fa fa-group",
@@ -77,7 +77,7 @@
         {
             "icon": "fa fa-magic",
             "title": "Feel complete confidence",
-            "text": "We have helped with policies in over a dozen states that enable donations and provide full liability protection, so you can donate with complete confidence."
+            "text": "You will be provided with all the details of the donation and the beneficiaries."
         }
     ]
 }

@@ -64,7 +64,13 @@ hr {
 
 .faqq {
     background-color: #E0EEFF;
+    font-size: 120%;
   }
+
+.fqans {
+  font-size: 26px;
+  color:#0d6b6e;
+}
 
 .ccontainer body {
       background-color: #FFF8F2;
@@ -76,6 +82,7 @@ hr {
      padding-left: 160px;
      padding-right: 200px;
      padding-top: 20px;
+
     }
     
 .faq-drawer {
@@ -84,7 +91,7 @@ hr {
     
 .faq-drawer__content-wrapper {
      
-      font-size: 1.45em;
+      font-size: 2em;
       line-height: 1.6em;
       max-height: 0px;
       overflow: hidden;
@@ -96,7 +103,7 @@ hr {
       border-top: #CCD0D5 1px solid;
       cursor: pointer;
       display: block;
-      font-size: 1.55em;
+      font-size: 2em;
       font-weight: 500;
       padding: 30px 0 0 0;
       position: relative;
@@ -106,6 +113,7 @@ hr {
     }
     
 .faq-drawer__title::after {
+  
       border-style: solid;
       border-width: 1px 1px 0 0;
       content: " ";
@@ -131,6 +139,7 @@ hr {
       + .faq-drawer__title
       + .faq-drawer__content-wrapper {
       max-height: 350px;
+    
     }
     
 .faq-drawer__trigger:checked + .faq-drawer__title::after {
@@ -157,7 +166,7 @@ input[type="checkbox"] {
     
 .pict {
       width: 84%;
-      height: 71%;
+      height: 70.5%;
     }
     
 .dev-names {
@@ -165,39 +174,39 @@ input[type="checkbox"] {
     }
     
 .n1 {
-      padding-left: 100px;
+      padding-left: 120px;
     }
     
 .n2 {
-      padding-left: 64px;
+      padding-left: 85px;
     }
     
 .n3 {
-      padding-left: 69px;
+      padding-left: 93px;
     }
     
 .n4 {
-      padding-left: 84px;
+      padding-left: 110px;
     }
     
 .r1 {
       
-      padding-left: 88px;
+      padding-left: 107px;
     }
     
 .r2 {
       
-      padding-left: 90px;
+      padding-left: 110px;
     }
     
 .r3 {
       
-      padding-left: 93px;
+      padding-left: 113px;
     }
     
 .r4 {
       
-      padding-left: 98px;
+      padding-left: 119px;
     }
     
     

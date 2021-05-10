@@ -231,6 +231,11 @@ header .intro-text {
 .faqq {
     background-color: #c2f0f0;
   }
+
+  .fqqans {
+	font-size: 24px;
+	color:#0d6b6e;
+  }
   .ccontainer body {
       background-color: #FFF8F2;
       color: #373539;

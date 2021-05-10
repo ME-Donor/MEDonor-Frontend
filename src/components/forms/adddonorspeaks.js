@@ -50,7 +50,7 @@ class addDonorspeaks extends Component{
         if(isValid){
             const newDonorspeak = {
                 heading:this.state.heading,
-                description:this.state.heading,
+                description:this.state.description,
                 author:this.props.name,
                 
             };

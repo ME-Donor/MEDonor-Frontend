@@ -25,16 +25,16 @@ class NgoBeneficiaries extends Component {
   renderNgoBeneficiaries = (ngobeneficiaries, key) => {
     return (
         
-      <Col md={6}>
-          <Row className='list-setting' key={key}>
+     
+          <div className='list-setting column'style={{padding: "10px"}} key={key}>
             <ListGroup.Item className='list-style'>
               <p>{ngobeneficiaries.description} </p>
 
               <i className='b-name'>{ngobeneficiaries.name}</i>
-              <p className='b-name'>{ngobeneficiaries.author.name}</p>
+              <p className='n-name'>{ngobeneficiaries.author.name}</p>
             </ListGroup.Item>
-          </Row>
-      </Col>
+          </div>
+      
         
     );
   };
@@ -45,11 +45,12 @@ class NgoBeneficiaries extends Component {
       return <h1>{this.props.ngobeneficiaries.errMess}</h1>;
     }
     return (
-      <div className='container'>
+      <div className="ngb">
+      <div className='coontainer'>
         <div className='title'>
           <h2 data-text='Ngo Beneficiary'>Ngo Beneficiaries</h2>
         </div>
-        <hr className='sep-2' />
+        <hr className='sep-2' style={{width:"85%" , marginTop:"17px"}} />
         <div className='row'>
           <ListGroup>
           
@@ -59,6 +60,7 @@ class NgoBeneficiaries extends Component {
         
           </ListGroup>
         </div>
+      </div>
       </div>
     );
   }

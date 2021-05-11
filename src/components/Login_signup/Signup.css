@@ -1,13 +1,15 @@
 .SignupContainer{
-  background-image: url('../../images/Caraousel/Medicine-2.jpg');
+ /* background-image: url('../../images/Caraousel/Medicine-2.jpg');*/
   background-size: cover;
+  margin-top: -25px;
+  
 }
 
 
 .Signup{
     display: inline-block;
-    margin:8% 12% 10% 18%;
-    width:65%;
+    margin:9% 13% 16% 14%;
+    width:73%;
    
     min-width:480px;
     padding: 48px 40px 36px;
@@ -16,13 +18,14 @@
     border: 1px solid #dadce0;
     border-radius: 5px;
     box-shadow: 0 0 20px 2px rgb(0 0 0 / 10%);
-    background-color: white;
-    filter: drop-shadow(2px 4px 6px grey);
+    background-color: rgb(246, 245, 245);
+    filter: drop-shadow(2px 4px 6px rgb(151, 148, 148));
   }
 
 .SignupForm{
   width:50%;
   float:right;
+  font-size: 17.5px;
 }
 
 .form-row{
@@ -36,12 +39,16 @@
 .buto{
   align-self:center;
   margin: 6px 15px;
+  background-color: #19645e;
+ 
+ 
+
 }
 
 .logo{
-  margin: 25px 55px 8px 1px;
+  margin: 28px 58px 11px 4px;
   width:50%;
-  max-height: 100px;
+  max-height: 50px;
   float:left;
 }
 

@@ -4,7 +4,8 @@ import './Signup.css';
 
 import {connect} from "react-redux";
 import * as userActions from "../../redux/actions/userActions";
-import display5 from "../../images/LOGo.jpg"
+import nlogo from "../../images/nlogo.jpeg"
+import nbkg from "../../images/nbkg.png"
 import {Redirect} from "react-router-dom";
 
 const Signup = (props) => {
@@ -39,11 +40,15 @@ const Signup = (props) => {
   }
 
   return (
-    <div className="SignupContainer">
+    <div className="SignupContainer"   style={{
+      backgroundImage: `url(${nbkg})`,
+      backgroundSize: 'cover',
+      
+      }}>
       <Form className='Signup'>
         <Row>
           <Col className="logo">
-          <img src={display5}></img>
+          <img src={nlogo}></img>
           </Col>
           <Col className="SignupForm">
             <Row form>

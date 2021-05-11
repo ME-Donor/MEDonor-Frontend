@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './forms.css';
 import Form from 'react-bootstrap/Form';
 import Select from 'react-select';
-import blogFormBG from '../../images/blogform.jpg';
+
 import { postNgoBlog } from '../../redux/actions/ngoblogs';
 import { connect } from 'react-redux';
 
@@ -84,24 +84,12 @@ class addBlogs extends Component {
 
   render() {
     return (
-      <div
-        style={{
-          backgroundImage: `url(${blogFormBG})`,
-          backgroundSize: 'cover',
-          padding: '5% 10% 5% 10%',
-        }}
-      >
-        <div className='forms__section'>
+      <div className="adblogp">
+    
+        <div className='forms__section abg'>
           <Container>
             <Col md={12} className='contact__main__content'>
-              <Row>
-                <Breadcrumb className='mb-6 page__navigation__breadCrump'>
-                  <BreadcrumbItem>
-                    <Link to='/home'>Home</Link>
-                  </BreadcrumbItem>
-                  <BreadcrumbItem active>Add Blog</BreadcrumbItem>
-                </Breadcrumb>
-              </Row>
+              
               <div className='blogform_div'>
                 <Jumbotron className='form-jumbotron'>
                   <Form>

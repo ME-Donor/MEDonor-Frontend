@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './forms.css';
 import Form from 'react-bootstrap/Form';
 import Select from 'react-select';
-import blogFormBG from '../../images/blogform.jpg';
+import nbbg from '../../images/nbBGg.jpg';
 import { postNgoBeneficiary } from '../../redux/actions/ngobeneficiary';
 import { connect } from 'react-redux';
 
@@ -92,24 +92,19 @@ class addBeneficiary extends Component {
 
   render() {
     return (
+     
       <div
         style={{
-          backgroundImage: `url(${blogFormBG})`,
+          backgroundImage: `url(${nbbg})`,
           backgroundSize: 'cover',
-          padding: '5% 10% 5% 10%',
+          padding: '4% 6% 5% 8%',
+          marginTop:'-19px',
         }}
       >
-        <div className='forms__section'>
+        <div className='forms__section ss'>
           <Container>
             <Col md={12} className='contact__main__content'>
-              <Row>
-                <Breadcrumb className='mb-6 page__navigation__breadCrump'>
-                  <BreadcrumbItem>
-                    <Link to='/home'>Home</Link>
-                  </BreadcrumbItem>
-                  <BreadcrumbItem active>Add Beneficiary</BreadcrumbItem>
-                </Breadcrumb>
-              </Row>
+             
               <div className='blogform_div'>
                 <Jumbotron className='form-jumbotron'>
                   <Form>
@@ -165,7 +160,7 @@ class addBeneficiary extends Component {
                       variant='info'
                     >
                       <span className='fa fa-paper-plane mr-3' />
-                      Publish Blog
+                      Publish 
                     </Button>
                   </Form>
                 </Jumbotron>

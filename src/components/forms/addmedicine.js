@@ -6,6 +6,7 @@ import './forms.css'
 import Form from 'react-bootstrap/Form';
 import Select from 'react-select';
 import {connect} from 'react-redux';
+import admed from '../../images/n.jpg';
 import {postMedicine} from '../../redux/actions/medicines';
 
 const mapStateToProps = (state) => {
@@ -95,17 +96,20 @@ class addMedicine extends Component{
 
     render(){
         return(
-            <div className="forms__section">
+            <div
+        style={{
+          backgroundImage: `url(${admed})`,
+          backgroundSize: 'cover',
+          padding: '5% 10% 5% 10%',
+          marginTop:'-20px',
+         
+        }}
+      >
+           
+            <div className="forms__section addmed">
                 <Container>
                 <Col md={12} className="contact__main__content">
-                        <Row>
-                            <Breadcrumb className="mb-4 page__navigation__breadCrump">
-                                <BreadcrumbItem>
-                                    <Link to="/home">Home</Link>
-                                </BreadcrumbItem>
-                                <BreadcrumbItem active>Add Medicine</BreadcrumbItem>
-                            </Breadcrumb>
-                        </Row>
+                       
                         <div>
                             <Jumbotron className='form-jumbotron'>
                                 <Form>
@@ -151,7 +155,7 @@ class addMedicine extends Component{
                                     <Button 
                                     onClick={this.handleSubmit} 
                                     className='mt-4'  
-                                    variant="danger">
+                                    variant="primary">
                                     <span className='fa fa-plus mr-3' />
                                     Donate Medicine
                                     </Button>
@@ -161,6 +165,7 @@ class addMedicine extends Component{
                 
                 </Col>
                 </Container>
+          </div>
           </div>
         )
     }

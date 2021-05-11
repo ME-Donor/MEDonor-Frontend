@@ -92,14 +92,7 @@ class addDonorspeaks extends Component{
             <div className='forms__section'>
               <Container>
                 <Col md={12} className='contact__main__content'>
-                  <Row>
-                    <Breadcrumb className='mb-6 page__navigation__breadCrump'>
-                      <BreadcrumbItem>
-                        <Link to='/home'>Home</Link>
-                      </BreadcrumbItem>
-                      <BreadcrumbItem active>Add Donorspeaks</BreadcrumbItem>
-                    </Breadcrumb>
-                  </Row>
+                 
                   <div className='blogform_div'>
                     <Jumbotron className='form-jumbotron'>
                       <Form>
@@ -139,7 +132,7 @@ class addDonorspeaks extends Component{
                           variant='info'
                         >
                           <span className='fa fa-paper-plane mr-3' />
-                          Publish Blog
+                          Publish 
                         </Button>
                       </Form>
                     </Jumbotron>

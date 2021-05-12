@@ -7,7 +7,6 @@ import Form from 'react-bootstrap/Form';
 import Select from 'react-select';
 import {connect} from 'react-redux';
 import {postDonorSpeak} from '../../redux/actions/donorspeaks';
-import blogFormBG from '../../images/blogform.jpg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import admed from '../../images/n.jpg';

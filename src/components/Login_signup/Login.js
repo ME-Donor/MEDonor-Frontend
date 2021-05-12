@@ -23,6 +23,7 @@ const Login = (props) => {
   };
 
   return (
+    <div className="bbgg">
     <div className="LoginContainer">
       <Row>
         <Col lg="6"><LoginCorousel/></Col>
@@ -66,8 +67,8 @@ const Login = (props) => {
             
             </div>
           </Row>
-          <Row>'
-            <div className="Otheroption">
+          <Row>
+            <div className="Otheroption bbt">
               <center>
                 <Button className='butto' href='/Signup'>New User? Signup</Button>
               </center>
@@ -76,6 +77,7 @@ const Login = (props) => {
     
     </Col>
     </Row>
+    </div>
     </div>
     
   );

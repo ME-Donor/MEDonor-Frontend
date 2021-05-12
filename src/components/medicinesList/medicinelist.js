@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 import { Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { connect } from 'react-redux';
+import admed from '../../images/n.jpg';
 import { fetchMedicines, deleteMedicine } from '../../redux/actions/medicines';
 
 const mapStateToProps = (state) => {
@@ -88,12 +89,21 @@ class medlist extends Component {
       return <h1>{this.props.medicines.errMess}</h1>;
     }
     return (
-      <div className="bb">
+      <div
+      style={{
+        backgroundImage: `url(${admed})`,
+        backgroundSize: 'cover',
+        padding: '5% 10% 5% 10%',
+        marginTop:'-20px',
+       
+      }}
+    >
+     
       <div>
         <div className='head text-center'>
-          <h1>Medicines Available</h1>
+          <h1>Medicines Available  <img src="https://www.cry.org/wp-content/themes/cry/images/streak.gif" className="streak-img streak-img-ds"/></h1>
         </div>
-
+        <hr className='sep-2' style={{width:"85%" , marginTop:"11px"}} />
        
         <br></br>
 
@@ -106,6 +116,7 @@ class medlist extends Component {
         </div>
       </div>
       </div>
+     
     );
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Container, Row, Col,Button} from 'react-bootstrap';
-import { Breadcrumb, BreadcrumbItem, Jumbotron } from "reactstrap";
+import { Breadcrumb, BreadcrumbItem, Jumbotron,Input } from "reactstrap";
 import {Link} from 'react-router-dom'
 import './forms.css'
 import Form from 'react-bootstrap/Form';
@@ -10,6 +10,8 @@ import {postDonorSpeak} from '../../redux/actions/donorspeaks';
 import blogFormBG from '../../images/blogform.jpg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import admed from '../../images/n.jpg';
+
 const mapStateToProps = (state) => {
     return {
         name:state.user.name,
@@ -89,11 +91,21 @@ class addDonorspeaks extends Component{
         return (
           <div
             style={{
-              backgroundImage: `url(${blogFormBG})`,
+              backgroundImage: `url(${admed})`,
               backgroundSize: 'cover',
-              padding: '5% 10% 5% 10%',
+              padding: '5% 10% 8% 10%',
+              marginTop:'-20px',
             }}
           >
+           <div className='container'>
+        <div fluid className="form-heads-donor" style={{marginTop:"-40px"}}>
+          <Container>
+              <h2 style={{fontSize: '5.7rem'}} >ADD DONOR SPEAKS </h2> 
+              <p><i>Tell the world about your experience of donating and help motivate the people around you</i></p>
+              
+          </Container>
+        </div>
+
             <div className='forms__section'>
               <Container>
                 <Col md={12} className='contact__main__content'>
@@ -118,15 +130,15 @@ class addDonorspeaks extends Component{
                           </div>
                         </Form.Group>
                         <Form.Group controlId='formBasicEmail'>
-                          <Form.Label>Description</Form.Label>
-                          <input
-                            type='textarea'
-                            name='description'
-                            rows={5}
-                            value={this.state.description}
-                            placeholder='Write blog content here'
-                            onChange={this.handleInputChange}
-                          />
+                      <Form.Label>Description</Form.Label>
+                      <Input
+                        type='textarea'
+                        name='description'
+                        rows={10}
+                        value={this.state.description}
+                        placeholder='Write  content here'
+                        onChange={this.handleInputChange}
+                      />
                           <div className='invalid__feedback'>
                             {this.state.errors.description}
                           </div>
@@ -157,6 +169,7 @@ class addDonorspeaks extends Component{
               pauseOnHover
                  />
             </div>
+          </div>
           </div>
         );
       }

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import './forms.css';
 import Form from 'react-bootstrap/Form';
 import Select from 'react-select';
-
+import bg from '../../images/nbBGg.jpg';
 import { postNgoBlog } from '../../redux/actions/ngoblogs';
 import { connect } from 'react-redux';
 import { ToastContainer, toast } from 'react-toastify';
@@ -92,7 +92,22 @@ class addBlogs extends Component {
 
   render() {
     return (
-      <div className="adblogp">
+      <div
+      style={{
+        backgroundImage: `url(${bg})`,
+        backgroundSize: 'cover',
+        padding: '4% 6% 5% 8%',
+        marginTop:'-19px',
+      }}
+    >
+      <div className='container'>
+        <div fluid className="form-heads-blog" style={{marginTop:"-40px"}}>
+          <Container>
+              <h2 style={{fontSize: '5.7rem'}} >ADD BLOG </h2> 
+              <p><i> Write about stories of change, the amazing work done by your NGO or just anything you want to tell the world about :)</i></p>
+              
+          </Container>
+        </div>
     
         <div className='forms__section abg'>
           <Container>
@@ -158,6 +173,8 @@ class addBlogs extends Component {
            />
         </div>
       </div>
+      </div>
+   
     );
   }
 }

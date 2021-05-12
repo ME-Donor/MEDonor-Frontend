@@ -106,6 +106,15 @@ class addBeneficiary extends Component {
           marginTop:'-19px',
         }}
       >
+        <div className='container'>
+        <div fluid className="form-heads-bene" style={{marginTop:"-40px"}}>
+          <Container>
+              <h2 style={{fontSize: '5.7rem'}} >ADD BENEFICIARY </h2> 
+              <p><i> Tell the world about the impact your NGO has created by quoting the people who have been benefited by the medicine donations</i></p>
+              
+          </Container>
+        </div>
+    
         <div className='forms__section ss'>
           <Container>
             <Col md={12} className='contact__main__content'>
@@ -184,6 +193,7 @@ class addBeneficiary extends Component {
         pauseOnHover
            />
         </div>
+      </div>
       </div>
     );
   }

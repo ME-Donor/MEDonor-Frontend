@@ -22,6 +22,18 @@
       color: #0D9EA4;
       text-shadow:2px 2px #a3d9e4;
   }
+  .donor-desc{
+    color: #606464;
+    font-size: 22px;
+    padding-top: 10px;
+    font-weight: 550;
+    padding-left: 70px;
+    padding-bottom: 25px;
+    margin-right: -50px;
+}
+
+
+
   /*hr line*/
   hr.sep-2 {
     border: 0; 

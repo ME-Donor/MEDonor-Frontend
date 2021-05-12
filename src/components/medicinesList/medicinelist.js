@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import { Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import { connect } from 'react-redux';
-import admed from '../../images/n.jpg'
+import admed from '../../images/n.jpg';
 import { fetchMedicines, deleteMedicine } from '../../redux/actions/medicines';
 
 const mapStateToProps = (state) => {

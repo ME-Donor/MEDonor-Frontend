@@ -81,12 +81,6 @@ function home() {
                             <br/><br/>
                             Know more about the generous donors and NGOs who have been works for this greater cause
                         </p>
-                        <Button variant="info" size="lg" style={{margin:"20px"}}>
-                            Donor Speaks
-                        </Button>{' '}
-                        <Button variant="info" size="lg" style={{margin:"20px"}}>
-                            Beneficiary talks
-                        </Button>{' '}
                     </Col>
                     <Col>
                         <img src={img3} alt="" className="home-image-4"/>

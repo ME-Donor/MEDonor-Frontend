@@ -35,19 +35,18 @@ function Header(props) {
                             <Nav.Link eventKey={3} href="/wth" className="navbar-main-links-hf " >
                                 <span className="navbar-nav-links-hf ">Ways to Help</span>
                             </Nav.Link>
-                            <Nav.Link eventKey={4} href="/blog" className="navbar-main-links-hf " >
-                                <span className="navbar-nav-links-hf ">Blog</span>
+                            <Nav.Link eventKey={4} href="/covid" className="navbar-main-links-hf " >
+                                <span className="navbar-nav-links-hf ">COVID-19</span>
                             </Nav.Link>
 
                             { props.role && <> 
 
-                                <Nav.Link eventKey={4} href="/donorspeaks" className="navbar-main-links-hf " >
-                                <span className="navbar-nav-links-hf ">Donorspeaks</span>
-                                </Nav.Link>
-                                
-                                <Nav.Link eventKey={4} href="/ngoBeneficiary" className="navbar-main-links-hf " >
-                                <span className="navbar-nav-links-hf ">Ngo Beneficiary</span>
-                                </Nav.Link> 
+                                <NavDropdown title="Know More" id="basic-nav-dropdown" className="navbar-main-links-dropdown navbar-nav-links-dropdown-hf navbar-nav-links-hf">
+                                    <NavDropdown.Item eventKey={5} href="/donorspeaks">Donorspeaks</NavDropdown.Item>
+                                    <NavDropdown.Item eventKey={6} href="/ngoBeneficiary">Ngo Beneficiary</NavDropdown.Item>
+                                    <NavDropdown.Item eventKey={7} href="/blog">Blog</NavDropdown.Item>
+                                    <NavDropdown.Item eventKey={8} href="/medicinelist">Medicines available</NavDropdown.Item>
+                                </NavDropdown>
                                 </>}
                         
                             { props.role=== "admin" && <>
@@ -57,18 +56,17 @@ function Header(props) {
                             </> }  
                             
                             { props.role=== "donor" && <> 
-                                <Nav.Link eventKey={5} href="/adddonorSpeak" className="navbar-main-links-hf" >
-                                    <span className="navbar-nav-links-hf">Add DonorSpeaks</span>
-                                </Nav.Link>  
+                                <NavDropdown title="Share with us" id="basic-nav-dropdown" className="navbar-main-links-dropdown navbar-nav-links-dropdown-hf navbar-nav-links-hf">
+                                    <NavDropdown.Item eventKey={5} href="/adddonorSpeak">Add DonorSpeaks</NavDropdown.Item>
+                                    <NavDropdown.Item eventKey={6} href="/addmedicine">Add Medicine</NavDropdown.Item>
+                                </NavDropdown>
                             </>} 
                             
                             { props.role=== "ngo" && <> 
-                                <Nav.Link eventKey={6} href="/addblog" className="navbar-main-links-hf">
-                                <span className="navbar-nav-links-hf">Add Blog</span>
-                                </Nav.Link>
-                                <Nav.Link eventKey={7} href="/addBeneficiary" className="navbar-main-links-hf">
-                                <span className="navbar-nav-links-hf">Add Beneficiary</span>
-                                </Nav.Link>
+                                <NavDropdown title="Share with us" id="basic-nav-dropdown" className="navbar-main-links-dropdown navbar-nav-links-dropdown-hf navbar-nav-links-hf">
+                                    <NavDropdown.Item eventKey={5} href="/addBeneficiary">Add Beneficiary</NavDropdown.Item>
+                                    <NavDropdown.Item eventKey={6} href="/addblog">Add Blog</NavDropdown.Item>
+                                </NavDropdown>
                             </>}
                     </Nav>
                 </Navbar.Collapse>

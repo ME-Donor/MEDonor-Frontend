@@ -18,10 +18,10 @@ class about extends Component {
       <div>
         <div className=" text-center">
           <Jumbotron fluid  className="jumbo-home" style={{backgroundColor: '#085053' , marginTop:"-25px"}}>
-            <h1 className="medonor-heading" style={{color: "#fff"}}> We save medicines to save lives.<br/>You can help.</h1>
+            <h1 className="medonor-heading" style={{color: "#fff", fontSize:"5rem"}}> We save medicines to save lives.<br/>You can help.</h1>
 
-            <p className="main-title-home hh" style={{color:"#88DADC" , fontSize:"38px"}}>WE TAKE SURPLUS MEDICINES OFF YOUR HAND AND GET THEM TO THE PEOPLE WHO NEED THEM</p>
-            <p className="sub-sub-para " style={{ fontSize:"25px"}}> The unused or unwanted medicines you want to donate are taken by NGO's and given to the people who really need them</p>
+            <p className="main-title-home hh" style={{color:"#88DADC" , fontSize:"30px"}}>WE TAKE SURPLUS MEDICINES OFF YOUR HAND <br/>AND GET THEM TO THE PEOPLE WHO NEED THEM</p>
+            <p className="sub-sub-para " style={{ fontSize:"20px"}}> The unused or unwanted medicines you want to donate are taken by NGO's and given to the people who really need them</p>
           </Jumbotron>
           <div className="about">
             <img className="image1" src={Capture3} alt="" />

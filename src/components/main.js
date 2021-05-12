@@ -21,6 +21,7 @@ import Error from './Login_signup/Error';
 import blog from './blog_page_article/blog_page';
 import BlogArticle from './blog_page_article/blog_article';
 import WTH from './waystohelp/wth';
+import covid from './covid/covid';
 
 import './main.css';
 import { ADD_MEDICINE } from '../redux/ActionTypes';
@@ -37,6 +38,7 @@ const Main = (props) => {
         <Route path='/Error' exact component={Error} />
         <Route path='/Login' exact component={Login} />
         <Route path='/Signup' exact component={Signup} />
+        <Route path='/covid' exact component={covid} />
         <Redirect to='/' />
       </Switch>
     );

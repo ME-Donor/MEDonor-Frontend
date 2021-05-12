@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import {Container, Row, Col,Button} from 'react-bootstrap';
-import { Breadcrumb, BreadcrumbItem, Jumbotron } from "reactstrap";
+import { Breadcrumb, BreadcrumbItem, Jumbotron,Input } from "reactstrap";
 import {Link} from 'react-router-dom'
 import './forms.css'
 import Form from 'react-bootstrap/Form';
 import Select from 'react-select';
 import {connect} from 'react-redux';
 import {postDonorSpeak} from '../../redux/actions/donorspeaks';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import admed from '../../images/n.jpg';
 
 const mapStateToProps = (state) => {
@@ -43,7 +45,10 @@ class addDonorspeaks extends Component{
           [name]: event.target.value
         });
     }
-    handleSubmit = (event) => {
+
+    notifyS = (message) => toast.success(message);
+    notifyF = (message) => toast.warning(message );
+    handleSubmit = async(event) => {
         event.preventDefault();
         const isValid = this.formValidation();
         console.log(this.state);
@@ -54,7 +59,8 @@ class addDonorspeaks extends Component{
                 author:this.props.name,
                 
             };
-            this.props.postDonorSpeak(newDonorspeak);
+            await this.props.postDonorSpeak(newDonorspeak);
+            this.notifyS('Donor Speaks posted successfully 😃!!')
         }
         
     }
@@ -123,18 +129,15 @@ class addDonorspeaks extends Component{
                           </div>
                         </Form.Group>
                         <Form.Group controlId='formBasicEmail'>
-                          <Form.Label>
-                          <span className='form__icon'></span>Description
-                          </Form.Label>
-                          <br></br>
-                          <input
-                            type='textarea'
-                            name='description'
-                            rows={5}
-                            value={this.state.description}
-                            placeholder='Write blog content here'
-                            onChange={this.handleInputChange}
-                          />
+                      <Form.Label>Description</Form.Label>
+                      <Input
+                        type='textarea'
+                        name='description'
+                        rows={10}
+                        value={this.state.description}
+                        placeholder='Write  content here'
+                        onChange={this.handleInputChange}
+                      />
                           <div className='invalid__feedback'>
                             {this.state.errors.description}
                           </div>
@@ -145,13 +148,25 @@ class addDonorspeaks extends Component{
                           variant='info'
                         >
                           <span className='fa fa-paper-plane mr-3' />
-                          Publish 
+                          SUBMIT DONOR-SPEAKS
                         </Button>
                       </Form>
                     </Jumbotron>
                   </div>
                 </Col>
               </Container>
+              <ToastContainer 
+              color="yellow"          
+              position="top-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+                 />
             </div>
           </div>
           </div>

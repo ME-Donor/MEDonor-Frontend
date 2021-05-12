@@ -8,6 +8,8 @@ import Select from 'react-select';
 import nbbg from '../../images/nbBGg.jpg';
 import { postNgoBeneficiary } from '../../redux/actions/ngobeneficiary';
 import { connect } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const mapStateToProps = (state) => {
   return {
@@ -47,7 +49,9 @@ class addBeneficiary extends Component {
       [name]: event.target.value,
     });
   }
-  handleSubmit(event) {
+  notifyS = (message) => toast.success(message);
+  notifyF = (message) => toast.warning(message );
+  handleSubmit=async(event)=> {
     event.preventDefault();
     const isValid = this.formValidation();
     console.log(this.state);
@@ -58,7 +62,8 @@ class addBeneficiary extends Component {
         name: this.state.name,
         author: this.props.name,
       };
-      this.props.postNgoBeneficiary(newBeneficiary);
+      await this.props.postNgoBeneficiary(newBeneficiary);
+      this.notifyS('Beneficiary talks posted successfully ✓!!')
     }
   }
 
@@ -169,13 +174,24 @@ class addBeneficiary extends Component {
                       variant='info'
                     >
                       <span className='fa fa-paper-plane mr-3' />
-                      Publish 
+                      SUBMIT NGO-BENEFICIARY TALKS 
                     </Button>
                   </Form>
                 </Jumbotron>
               </div>
             </Col>
           </Container>
+          <ToastContainer          
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+           />
         </div>
       </div>
       </div>

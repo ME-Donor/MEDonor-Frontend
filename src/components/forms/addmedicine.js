@@ -8,6 +8,8 @@ import Select from 'react-select';
 import {connect} from 'react-redux';
 import admed from '../../images/n.jpg';
 import {postMedicine} from '../../redux/actions/medicines';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const mapStateToProps = (state) => {
     return {
@@ -47,7 +49,9 @@ class addMedicine extends Component{
           [name]: event.target.value
         });
     }
-    handleSubmit = (event) => {
+    notifyS = (message) => toast.success(message);
+    notifyF = (message) => toast.warning(message );
+    handleSubmit = async(event) => {
         event.preventDefault();
         const isValid = this.formValidation();
         console.log(this.state);
@@ -61,7 +65,8 @@ class addMedicine extends Component{
                 contact:this.props.contact,
                 
             };
-            this.props.postMedicine(newMedicine);
+            await this.props.postMedicine(newMedicine);
+            this.notifyF('Medicine posted successfully 😃!!')
         }
         
     }
@@ -173,6 +178,18 @@ class addMedicine extends Component{
                 
                 </Col>
                 </Container>
+                <ToastContainer 
+        color="yellow"          
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+           />
           </div>
           </div>
           </div>

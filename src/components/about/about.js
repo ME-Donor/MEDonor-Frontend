@@ -20,8 +20,8 @@ class about extends Component {
           <Jumbotron fluid  className="jumbo-home" style={{backgroundColor: '#085053' , marginTop:"-25px"}}>
             <h1 className="medonor-heading" style={{color: "#fff"}}> We save medicines to save lives.<br/>You can help.</h1>
 
-            <p className="main-title-home" style={{color:"#0D9EA4" , fontSize:"40px"}}>Not everyone has medication to donate.</p>
-            <p className="sub-sub-para">But your monetary support helps us get surplus medication to people in need.</p>
+            <p className="main-title-home hh" style={{color:"#88DADC" , fontSize:"38px"}}>WE TAKE SURPLUS MEDICINES OFF YOUR HAND AND GET THEM TO THE PEOPLE WHO NEED THEM</p>
+            <p className="sub-sub-para " style={{ fontSize:"25px"}}> The unused or unwanted medicines you want to donate are taken by NGO's and given to the people who really need them</p>
           </Jumbotron>
           <div className="about">
             <img className="image1" src={Capture3} alt="" />
@@ -40,8 +40,8 @@ class about extends Component {
                   Vision
                 </h2>
                 <p className="para">
-                  A happy, healthy and creative child whose rights are protected and honoured in a society that is built on respect for dignity, justice and equity for all.
-                  To enable peoples’ collectives and movements encompassing diverse segments, to pledge their particular strengths, working in partnership to secure, protect and honour the rights of India’s children.
+                  A happy and healthy society where everyone cares for the needs of the people around them, where everyone is willing to help and to donate to save lives. To build a society where no medicine goes to waste and everyone has access to all the mediccation they need without financial burdens. 
+          
                         </p>
               </Col>
 
@@ -51,8 +51,8 @@ class about extends Component {
                   Mission
                 </h2>
                 <p className="para">
-                  To enable people to take responsibility for the situation of the deprived Indian child and so motivate them to seek resolution through individual and collective action thereby enabling children to realise their full potential
-                  To make people discover their potential for action and change
+                  To enable people to take responsibility for the situation at hand and to motivate them to donate and help the people in need around them. To get surplus medicines to the people in need, to help people realize their power to change someone's life just by a single donation.
+            
                         </p>
               </Col>
             </Row>

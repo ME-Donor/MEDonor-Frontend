@@ -18,6 +18,8 @@
 .butto{
   margin:6px 2px;
   background-color: #175e59;
+ 
+  
 }
 
 .butto:hover{
@@ -26,37 +28,49 @@
 }
 
 .LoginDiv{
-  box-shadow: 0 0 2px #495867;
+  /*box-shadow: 0 0 2px #495867;*/
   padding: 5%;
-  width: 90%;
+  width: 80%;
   background-color: #F7F7FF;
   opacity: 0.90;
   color: #175e59;
-  margin-top: 5%; 
-  
-  background-image: url('../../images/Caraousel/loginbg2.jpg');
+  margin-top: 9%; 
+  padding-top: 45px;
+  font-size: 18px;
+  margin-left: 39px;
+  box-shadow: 0 0 20px 2px rgb(0 0 0 / 10%);
+  filter: drop-shadow(2px 4px 6px rgb(151, 148, 148));
+  font-family: 'Montserrat', sans-serif;
 }
 
 .Otheroption{
-  box-shadow: 0 0 2px #495867;
-  padding: 5%;
-  width: 90%;
-  margin-top: 3%;
-  background-color: #F7F7FF;
+ 
   color: #175e59;
   opacity: 0.90;
   
-  background-image: url('../../images/Caraousel/loginbg2.jpg');
+}
+
+.bbt {
+  padding-top: 41px;
+  padding-left: 300px;
 }
 
 .LoginCorousel{
   height: 436px;
   background-size:cover;
   overflow:hidden;
-  box-shadow: 0 0 25px white;
+  box-shadow: 0 0 45px white;
 }
 
 .LoginCorouselDiv{
   width: 85%;
   margin: 6% 10% 5% 10%;
+}
+
+.bbgg {
+  background-color:paleturquoise;
+  margin-top: -20px;
+  margin-bottom: -15px;
+  padding-bottom: 17px;
+  padding-top: 5px;
 }

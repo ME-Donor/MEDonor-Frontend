@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 import Select from 'react-select';
 import {connect} from 'react-redux';
 import {postDonorSpeak} from '../../redux/actions/donorspeaks';
-import blogFormBG from '../../images/blogform.jpg';
+import admed from '../../images/n.jpg';
 
 const mapStateToProps = (state) => {
     return {
@@ -84,11 +84,21 @@ class addDonorspeaks extends Component{
         return (
           <div
             style={{
-              backgroundImage: `url(${blogFormBG})`,
+              backgroundImage: `url(${admed})`,
               backgroundSize: 'cover',
-              padding: '5% 10% 5% 10%',
+              padding: '5% 10% 8% 10%',
+              marginTop:'-20px',
             }}
           >
+           <div className='container'>
+        <div fluid className="form-heads-donor" style={{marginTop:"-40px"}}>
+          <Container>
+              <h2 style={{fontSize: '5.7rem'}} >ADD DONOR SPEAKS </h2> 
+              <p><i>Tell the world about your experience of donating and help motivate the people around you</i></p>
+              
+          </Container>
+        </div>
+
             <div className='forms__section'>
               <Container>
                 <Col md={12} className='contact__main__content'>
@@ -113,7 +123,10 @@ class addDonorspeaks extends Component{
                           </div>
                         </Form.Group>
                         <Form.Group controlId='formBasicEmail'>
-                          <Form.Label>Description</Form.Label>
+                          <Form.Label>
+                          <span className='form__icon'></span>Description
+                          </Form.Label>
+                          <br></br>
                           <input
                             type='textarea'
                             name='description'
@@ -140,6 +153,7 @@ class addDonorspeaks extends Component{
                 </Col>
               </Container>
             </div>
+          </div>
           </div>
         );
       }

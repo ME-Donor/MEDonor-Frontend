@@ -105,6 +105,14 @@ class addMedicine extends Component{
          
         }}
       >
+           <div className='container'>
+        <div fluid className="form-heads-med" style={{marginTop:"-40px"}}>
+          <Container>
+              <h2 style={{fontSize: '5.7rem'}} >ADD MEDICINES </h2> 
+              <p><i>Put up the medicines you would like to donate</i></p>
+              
+          </Container>
+        </div>
            
             <div className="forms__section addmed">
                 <Container>
@@ -165,6 +173,7 @@ class addMedicine extends Component{
                 
                 </Col>
                 </Container>
+          </div>
           </div>
           </div>
         )

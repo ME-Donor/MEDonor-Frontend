@@ -30,7 +30,7 @@
   }
 
   /* Float three columns side by side */
-  .column {
+  .collumn {
     float: left;
     width: 33.33%;
     padding: 0 10px;
@@ -60,7 +60,7 @@
   
   /* Responsive columns */
   @media screen and (max-width: 600px) {
-    .column {
+    .collumn {
       width: 100%;
       display: block;
       margin-bottom: 20px;

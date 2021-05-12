@@ -151,7 +151,7 @@ const Blog = ({ fetchNgoBlogs, ngoBlogs }) => {
                     </p>
                   </Col>
                   <Col md='auto'>
-                    <p className='small-note' style={{ fontSize: '1.3rem' }}>
+                    <p className='small-note' style={{ fontSize: '1.6rem' }}>
                       {' '}
                       All our efforts are made possible only because of your
                       support
@@ -169,7 +169,7 @@ const Blog = ({ fetchNgoBlogs, ngoBlogs }) => {
                     </p>
                   </Col>
                   <Col md='auto'>
-                    <p className='small-note' style={{ fontSize: '1.3rem' }}>
+                    <p className='small-note' style={{ fontSize: '1.6rem' }}>
                       {' '}
                       Your donations are tax exempted under 80G of the Indian
                       Income Tax Act
@@ -187,7 +187,7 @@ const Blog = ({ fetchNgoBlogs, ngoBlogs }) => {
                     </p>
                   </Col>
                   <Col md='auto'>
-                    <p className='small-note' style={{ fontSize: '1.3rem' }}>
+                    <p className='small-note' style={{ fontSize: '1.6rem' }}>
                       {' '}
                       Your donation transactions are completely safe and secure
                     </p>

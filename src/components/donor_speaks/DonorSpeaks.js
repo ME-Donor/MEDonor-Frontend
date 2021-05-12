@@ -29,7 +29,7 @@ class DonorSpeaks extends Component {
   renderDonorSpeaks = (donorSpeaks, key) => {
     return (
       <div>
-      <div className='column'style={{padding: "20px"}} key={key}>
+      <div className='collumn'style={{padding: "20px"}} key={key}>
         <div className='card-ds'>
           <p>{donorSpeaks.description}</p>
           <p className='donorName'>{donorSpeaks.author.name}</p>

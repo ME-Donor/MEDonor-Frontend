@@ -79,7 +79,6 @@ const Signup = (props) => {
             onChange={changeHandler} value={signupCred.role}>
                 <option>donor</option>
                 <option>ngo</option>
-                <option>admin</option>
               </Input>
             </FormGroup>
 

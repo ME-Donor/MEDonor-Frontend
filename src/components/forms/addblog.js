@@ -8,7 +8,8 @@ import Select from 'react-select';
 
 import { postNgoBlog } from '../../redux/actions/ngoblogs';
 import { connect } from 'react-redux';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const mapStateToProps = (state) => {
   return {
     name: state.user.name,
@@ -45,7 +46,11 @@ class addBlogs extends Component {
       [name]: event.target.value,
     });
   }
-  handleSubmit(event) {
+
+  notifyS = (message) => toast.success(message);
+  notifyF = (message) => toast.warning(message );
+  
+  handleSubmit= async(event)=> {
     event.preventDefault();
     const isValid = this.formValidation();
     console.log(this.state);
@@ -55,9 +60,12 @@ class addBlogs extends Component {
         description: this.state.description,
         author: this.props.name,
       };
-      this.props.postNgoBlog(newBlog);
+      await this.props.postNgoBlog(newBlog);
+      this.notifyF('Blog posted successfully 😃!!')
+
     }
   }
+
 
   formValidation = () => {
     const { heading, description } = this.state;
@@ -136,6 +144,18 @@ class addBlogs extends Component {
               </div>
             </Col>
           </Container>
+          <ToastContainer 
+        color="yellow"          
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+           />
         </div>
       </div>
     );

@@ -8,7 +8,8 @@ import Select from 'react-select';
 import {connect} from 'react-redux';
 import {postDonorSpeak} from '../../redux/actions/donorspeaks';
 import blogFormBG from '../../images/blogform.jpg';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const mapStateToProps = (state) => {
     return {
         name:state.user.name,
@@ -43,7 +44,10 @@ class addDonorspeaks extends Component{
           [name]: event.target.value
         });
     }
-    handleSubmit = (event) => {
+
+    notifyS = (message) => toast.success(message);
+    notifyF = (message) => toast.warning(message );
+    handleSubmit = async(event) => {
         event.preventDefault();
         const isValid = this.formValidation();
         console.log(this.state);
@@ -54,7 +58,8 @@ class addDonorspeaks extends Component{
                 author:this.props.name,
                 
             };
-            this.props.postDonorSpeak(newDonorspeak);
+            await this.props.postDonorSpeak(newDonorspeak);
+            this.notifyS('Donor Speaks posted successfully 😃!!')
         }
         
     }
@@ -132,13 +137,25 @@ class addDonorspeaks extends Component{
                           variant='info'
                         >
                           <span className='fa fa-paper-plane mr-3' />
-                          Publish 
+                          SUBMIT DONOR-SPEAKS
                         </Button>
                       </Form>
                     </Jumbotron>
                   </div>
                 </Col>
               </Container>
+              <ToastContainer 
+              color="yellow"          
+              position="top-center"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+                 />
             </div>
           </div>
         );

@@ -133,7 +133,7 @@ class about extends Component {
               <br></br>
               <br></br>
               <h4 className="n1"><b>Nisha</b></h4>
-              <h4 className="r1">Backend</h4>
+              <h4 className="r1" style={{marginLeft:"-60px"}}>Backend and Frontend</h4>
             </Col>
             <Col md={3}>
 

@@ -56,7 +56,7 @@ export const Testimonials = (props) => {
                 <div className="faq-drawer__content-wrapper">
                   <div className="faq-drawer__content">
                     <p className="fqqans">
-                    NGO's contact the donors who've put up medicines ofr donation, they then pick up the medicines from the donor's place or the donor can drop them at the NGO, whichever suits both.
+                    NGO's contact the donors who've put up medicines for donation, they then pick up the medicines from the donor's place or the donor can drop them at the NGO, whichever suits both.
                     </p>
                   </div>
                 </div>

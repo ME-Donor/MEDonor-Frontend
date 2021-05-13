@@ -5,6 +5,7 @@ import img1 from './img1.jpg';
 import pic1 from './pic1.png';
 import pic2 from './pic2.png';
 import pic3 from './pic3.png';
+import nbbg from './nbBGg.jpg';
 import {
   Jumbotron,
   Container,
@@ -28,13 +29,19 @@ function BlogArticle({ blog, fetchNgoBlogById }) {
   }, [fetchNgoBlogById, blog]);
 
   return (
-    <div className='blog-article'>
+    <div className='blog-article' style={{
+      backgroundImage: `url(${nbbg})`,
+      backgroundSize: 'cover',
+      padding: '5% 10% 5% 10%',
+      marginTop:'-20px',
+    }}>
+      <div style={{backgroundColor:"#fff"}}>
       <Jumbotron
         className='article-heading'
         style={{ backgroundColor: '#fff' }}
       >
-        <Container className='article-heading-content'>
-          <h3
+        <Container className='article-heading-content' style={{textAlign: 'center'}}>
+          <h3 
             className='article-heading-title'
             style={{ fontSize: '5rem', color: '#1c8a85' }}
           >
@@ -42,12 +49,12 @@ function BlogArticle({ blog, fetchNgoBlogById }) {
           </h3>
           <p>
             {' '}
-            <span className='span-published-by'>Published by</span>{' '}
+            <span className='span-published-by'><i>Published by</i></span>{' '}
             <span className='span-publisher'>{blog && blog.author.name}</span>
           </p>
         </Container>
       </Jumbotron>
-      <Container fluid='sm' className='blog-article-text'>
+      <Container fluid='sm' className='blog-article-text' style={{textAlign: 'center'}}>
         <p style={{ fontSize: '1.7rem' }}>
           <img src={img1} className='blog-article-text-image' />
           <br />
@@ -114,6 +121,7 @@ function BlogArticle({ blog, fetchNgoBlogById }) {
           </Row>
         </Container>
       </Jumbotron>
+      </div>
     </div>
   );
 }

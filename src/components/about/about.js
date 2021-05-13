@@ -40,7 +40,7 @@ class about extends Component {
                   Vision
                 </h2>
                 <p className="para">
-                  A happy and healthy society where everyone cares for the needs of the people around them, where everyone is willing to help and to donate to save lives. To build a society where no medicine goes to waste and everyone has access to all the mediccation they need without financial burdens. 
+                  A happy and healthy society where everyone cares for the needs of the people around them, where everyone is willing to help and to donate to save lives. To build a society where no medicine goes to waste and everyone has access to all the medication they need without financial burdens. 
           
                         </p>
               </Col>

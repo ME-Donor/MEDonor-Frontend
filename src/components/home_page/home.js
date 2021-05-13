@@ -78,8 +78,6 @@ function home() {
                             MEDONOR directly accepts medicine from individuals, manufacturers, 
                             pharmacies, wholesalers, and health facilities. Every little bit helps, and 
                             we appreciate your support.
-                            <br/><br/>
-                            Know more about the generous donors and NGOs who have been works for this greater cause
                         </p>
                     </Col>
                     <Col>

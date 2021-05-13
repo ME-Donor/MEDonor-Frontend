@@ -6,7 +6,7 @@ function Footer() {
     <div className="main-footer">
         <div className="container">
             <div className="footer-content">
-                <p><b>Redifining the feeling of being  helping hands for someone in Need.</b></p>
+                <p><b>Redefining the feeling of being  helping hands for someone in Need.</b></p>
                 <ul className="socials">
                     <li><a href="#"><i className="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i className="fa fa-twitter"></i></a></li>
